@@ -2,7 +2,7 @@
 from data import stores
 from components import Cart
 
-site_name = ""  # Give your site a name
+site_name = "www.kw.zain.com"  # Give your site a name
 
 def welcome():
     print("Welcome to %s\nFeel free to shop throughout the stores we have, and only checkout once!" % site_name)
@@ -12,6 +12,8 @@ def print_stores():
     prints the list of stores in a nice readable format.
     """
     # your code goes here!
+    for store in stores:
+        print(store.name)
 
 def get_store(store_name):
     """
