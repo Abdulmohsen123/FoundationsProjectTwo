@@ -1,12 +1,12 @@
 # CLASSES AND METHODS
 class Store():
-    products = []
     def __init__(self, name):
         """
         Initializes a new store with a name.
         """
         # your code goes here!
         self.name = name
+        self.products = []
 
     def add_product(self, product):
         """
@@ -78,4 +78,4 @@ class Cart():
         Does the checkout.
         """
         # your code goes here!
-        print("")
+        print("Price: {}".format(self.get_total_price()))
